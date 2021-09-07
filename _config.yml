@@ -12,7 +12,7 @@
 
 # theme                    : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -21,9 +21,9 @@ title_separator          : "-"
 subtitle                 : PhD. Student
 name                     : "Ferran Martínez"
 description              : "Summary of the information available on the Internet about Ferran Martínez Felipe."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+url                      : "https://ferranmartinez.github.io"
+baseurl                  : ""
+repository               : "ferranmafe/ferranmafe.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # "/assets/images/logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -116,9 +116,9 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/ferran-martínez-felipe-ab7a58113"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ferranmafe"
