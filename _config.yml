@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : PhD. Student
 name                     : "Ferran Martínez"
 description              : "Summary of the information available on the Internet about Ferran Martínez Felipe."
-url                      : ""
+url                      : "https://ferranmafe.github.io/ferranmartinez.github.io/"
 baseurl                  : ""
 repository               : "ferranmafe/ferranmafe.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
