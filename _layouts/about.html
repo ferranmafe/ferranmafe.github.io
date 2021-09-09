@@ -1,3 +1,64 @@
 ---
 layout: default
 ---
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% assign about = page.about | default: 'list' %}
+{% assign experience = page.experience | default: 'list' %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+  {% if about %}
+  <div class="about__container">
+    <div class="container__col-1">
+      <div class="box">
+        {% if about.title %}<h1>{{ about.title | default: "About" }}</h1>{% endif %}
+        {% if about.content %}<p>{{ about.content }}</p>{% endif %}
+      </div>
+    </div>
+    <div class="container__col-2">
+      {% if about.image_path %}
+        <div class="box">
+          <img class="about__photo" src="{{ about.image_path }}"/>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+  
+  {% if experience %}
+    <div class="experience__container">
+      {% if experience.title %}<h2>{{ experience.title | default: "Experience"}}</h2>{% endif %}
+      {% for row in experience.experience_row %}
+        <div class="experience__row">
+          {% if row.logo_path %}
+            <div class="experience__logo__container">
+              <img class="experience__logo" src="{{ row.logo_path }}">
+            </div>
+          {% endif %}
+          <div class="experience__content__container">
+            {% if row.title %}
+              <span class="experience__content__title">
+                {{ row.title }}
+              </span><br>
+            {% endif %}
+            {% if row.date %}
+              <span class="experience__content__date">
+                {{ row.date }}
+              </span><br>
+            {% endif %}
+            {% if row.info %}
+              <p class="experience__content__info">
+                {{ row.info }}
+              </p>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

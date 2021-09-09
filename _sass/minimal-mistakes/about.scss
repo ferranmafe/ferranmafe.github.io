@@ -6,12 +6,17 @@
 .container__col-1{ // this is your first column set to 50% width of the parent container
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 70%;
 }
 .container__col-2{ // this is your second column set to 50% width of the parent container
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 30%;
+    text-align: center;
+}
+.about__photo{
+  padding: 20px;
+  border-radius: 50%;
 }
 // this is a media query what this does is says when the screen size is smaller than 768px use these styles 
 @media(max-width: 768px){ 
@@ -26,4 +31,34 @@
     .container__col-2{
        width: 100%;
     }
+}
+
+.experience__row{
+  margin: 24px 0 0 0;
+  display: flex;
+  flex-direction: row;
+}
+.experience__logo__container{
+  display: flex;
+  margin-right: 16px;
+}
+.experience__logo{
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+.experience__content__container{
+  width: 100%;
+  font-size: 0;
+}
+.experience__content__title{
+  font-weight: bold;
+  font-size: 18px;
+}
+.experience__content__date{
+  font-size: 16px;
+  color: #6b7280;
+}
+.experience__content__info{
+  font-size: 16px;
 }
