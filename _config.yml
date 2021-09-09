@@ -295,4 +295,4 @@ defaults:
       layout: single
       author_profile: false
 
-theme: jekyll-theme-slate
+theme: jekyll-theme-cayman
