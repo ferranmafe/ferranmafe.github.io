@@ -22,7 +22,7 @@ subtitle                 : PhD. Student
 name                     : "Ferran Martínez"
 description              : "Summary of the information available on the Internet about Ferran Martínez Felipe."
 url                      : "https://ferranmartinez.github.io"
-baseurl                  : ""
+baseurl                  : "ferranmartinez.github.io"
 repository               : "ferranmafe/ferranmafe.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # "/assets/images/logo.png"
