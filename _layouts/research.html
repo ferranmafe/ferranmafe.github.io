@@ -1,0 +1,80 @@
+---
+layout: default
+---
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% assign projects = page.projects | default: 'list' %}
+{% assign publications = page.publications | default: 'list' %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+  
+  <div class="research__container page">
+    <h1>{{ page.title | default: "Research"}}</h1>
+    {% if page.description %}
+    <p>
+      {{ page.description }}
+    </p>
+    {% endif %}
+    
+    {% if projects %}
+      <!--div class="projects__container">
+        {% if projects.title %}<h2>{{ projects.title | default: "Projects" }}</h2>{% endif %}
+        
+        {% for row in projects.publications_row %}
+          <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+            {% if row.title %}<meta itemprop="headline" content="{{ row.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+            {% if row.description %}<meta itemprop="description" content="{{ row.description | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+
+            <section class="page__content" itemprop="text">
+              {{ row }}
+            </section>
+          </article>
+        {% endfor %}
+      </div-->
+    {% endif %}
+    
+    {% if publications %}
+    <div class="publications__container">
+      {% if publications.title %}<h2>{{ publications.title | default: "Publications" }}</h2>{% endif %}
+      {% for row in publications.publications_row %}
+        <div class="publications__row">
+          <i class="fas fa-file"></i>
+          <span class="publications__authors">
+            {{ row.authors }}
+          </span>
+          {% if row.url %}
+            <a href="https://google.com" target="_blank">
+              <span class="publications__title">
+                {{ row.title }}
+              </span>
+            </a>
+          {% else %}
+            <span class="publications__title">
+              {{ row.title }}
+            </span>
+          {% endif %}
+          <span class="publications__media">
+            {{ row.media }}
+          </span>
+          {% if row.links %}
+          <div class="publications__buttons">
+            <p>
+              {% for button in row.links %}
+                <a href="{{button.url}}" target="_blank" class="btn btn--primary">
+                  {{ button.text }}
+                </a>
+              {% endfor %}
+            </p>
+          </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
