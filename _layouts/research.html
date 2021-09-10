@@ -7,7 +7,6 @@ layout: default
   {% include page__hero_video.html %}
 {% endif %}
 
-{% assign projects = page.projects | default: 'list' %}
 {% assign publications = page.publications | default: 'list' %}
 
 <div id="main" role="main">
@@ -21,22 +20,20 @@ layout: default
     </p>
     {% endif %}
     
-    {% if projects %}
-      <!--div class="projects__container">
-        {% if projects.title %}<h2>{{ projects.title | default: "Projects" }}</h2>{% endif %}
-        
-        {% for row in projects.publications_row %}
-          <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
-            {% if row.title %}<meta itemprop="headline" content="{{ row.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-            {% if row.description %}<meta itemprop="description" content="{{ row.description | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    <div class="projects__container">
+      <h2>Projects</h2>
+      
+      <article class="splash projects__content" itemscope itemtype="https://schema.org/CreativeWork">
+        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+        {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
-            <section class="page__content" itemprop="text">
-              {{ row }}
-            </section>
-          </article>
-        {% endfor %}
-      </div-->
-    {% endif %}
+        <section class="page__content" itemprop="text">
+          {{ content }}
+        </section>
+      </article>
+    </div>
     
     {% if publications %}
     <div class="publications__container">

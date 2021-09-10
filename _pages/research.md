@@ -5,37 +5,28 @@ layout: research
 title: "Research"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque 
 aliquam nunc, eu semper enim. Vestibulum euismod nunc ut neque gravida, ut faucibus sem sollicitudin."
-projects:
-  title: "Projects"
-  projects_row:
-    - image_path: /assets/images/mm-customizable-feature.png
-      alt: "customizable"
-      title: "Project 1"
-      description: "Lorem ipsum dolor sit amet"
-      url: "https://google.com"
-      btn_class: "btn--primary"
-      btn_label: "Learn more"
-    - image_path: /assets/images/mm-customizable-feature.png
-      alt: "customizable"
-      title: "Project 2"
-      excerpt: "Lorem ipsum dolor sit amet"
-      url: "https://google.com"
-      btn_class: "btn--primary"
-      btn_label: "Learn more"
-    - image_path: /assets/images/mm-customizable-feature.png
-      alt: "customizable"
-      title: "Project 3"
-      excerpt: "Lorem ipsum dolor sit amet"
-      url: "https://google.com"
-      btn_class: "btn--primary"
-      btn_label: "Learn more"
-    - image_path: /assets/images/mm-customizable-feature.png
-      alt: "customizable"
-      title: "Project 4"
-      excerpt: "Lorem ipsum dolor sit amet"
-      url: "https://google.com"
-      btn_class: "btn--primary"
-      btn_label: "Learn more"
+feature_row:
+  - image_path: /assets/images/mm-customizable-feature.png
+    alt: "customizable"
+    title: "Project 1"
+    excerpt: "Lorem ipsum dolor sit amet"
+    url: "/docs/configuration/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/mm-customizable-feature.png
+    alt: "customizable"
+    title: "Project 1"
+    excerpt: "Lorem ipsum dolor sit amet"
+    url: "/docs/configuration/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/mm-customizable-feature.png
+    alt: "customizable"
+    title: "Project 1"
+    excerpt: "Lorem ipsum dolor sit amet"
+    url: "/docs/configuration/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
 publications:
   title: "Publications"
   publications_row:
@@ -92,3 +83,4 @@ publications:
         - text: "Springer"
           url: "https://google.com"
 ---
+{% include feature_row %}
