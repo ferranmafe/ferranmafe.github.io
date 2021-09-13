@@ -58,7 +58,6 @@ Right now my main focus is everything related to starting a PhD. in Robotics, fr
   * Obtain an advanced open water scuba diving license
 * Learn windsurf
 * Do sky diving
-* 
 
 ## Events to Attend
 * ROSCon
