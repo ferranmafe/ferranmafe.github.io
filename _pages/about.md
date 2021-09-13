@@ -24,7 +24,8 @@ experience:
   title: "Experience"
   experience_row:
     - logo_path: "/assets/images/iri-logo.png"
-      title: "PhD. Student at IRI"
+      title: > 
+        PhD. Student at <a href="https://www.iri.upc.edu/" target="_blank">IRI</a>
       date: "September 2021 - Now"
       info: "As PhD. Student at IRI my job is related to improve the current 
       knowledge in social robotics. The idea is to study how to use social robots
@@ -33,7 +34,8 @@ experience:
       information, how to notify a user that its information is being stored and
       so on."
     - logo_path: "/assets/images/datision-logo.jpeg"
-      title: "Software Developer at Datision"
+      title: >
+        Software Developer at <a href="https://datision.com/" target="_blank">Datision</a>
       date: "November 2018 - March 2021"
       info: "As a Software Engineer at Datision my main task was to work on 
       industrial projects related to Artificial Intelligence. The idea was to use 
@@ -43,14 +45,16 @@ experience:
       were done with Tensorflow + Keras or Scikit-Learn, depending if Deep Learning 
       or Machine Learning was used."
     - logo_path: "/assets/images/iri-logo.png"
-      title: "Intern at IRI"
+      title: > 
+        Intern at <a href="https://www.iri.upc.edu/" target="_blank">IRI</a>
       date: "June 2017 - October 2018"
       info: "As an intern at IRI I helped in both robotics competitions and technology 
       transference projects under the supervision of the Perception and Manipulation lab. 
       In both cases the technological stack was based on ROS and Python, combining robotics
       work with AI (mostly Computer Vision with Keras + Tensorflow)."
     - logo_path: "/assets/images/argosbpm-logo.png"
-      title: "Software Developer at ArgosBPM"
+      title: >
+        Software Developer at <a href="https://www.linkedin.com/company/argosbpm/about/" target="_blank">ArgosBPM</a>
       date: "March 2016 - November 2016"
       info: "As a developer at ArgosBPM, I was in charge of developing Javascript 
       scripts for ARIS platform, in order to raise user experience while working 
